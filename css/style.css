@@ -1,3 +1,105 @@
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+body {
+  background-color: #FCFCFC;
+  font-family: soleil, sans-serif;
+  color: #0D0D0D;
+  display: grid;
+  height: 100%;
+  width: 100%;
+}
+
+/*----------Font----------*/
+h1, h2, h3, h4, h5, p, a, button {
+  line-height: 1.4;
+}
+
+h1, h3, h4, h5 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.625em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+h4 {
+  font-size: 1.0625em;
+}
+
+h5 {
+  font-size: 0.875em;
+}
+
+p {
+  font-size: 1.0625em;
+}
+
+figcaption {
+  font-size: 0.75em;
+  color: #353535;
+}
+
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+.footer a {
+  color: #D7D7D7;
+}
+
+
+
+/*-----------Layout------------*/
+header {
+  padding: 23px 16px;
+  box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
+}
+
+main {
+  padding: 48px 16px;
+}
+
+.footer {
+  background-color: #0D0D0D;
+  color: #FCFCFC;
+  padding: 48px 16px 131px 16px;
+}
+
+
+/*------------elements----------*/
+button {
+  background-color: #0D0D0D;
+  color: #FCFCFC;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.secondary {
+  background-color: rgba(0, 0, 0, 0%);
+  color: #0D0D0D;
+  border-color: #0D0D0D;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.footer button {
+  color: #FCFCFC;
+  border-color: #FCFCFC;
+}
