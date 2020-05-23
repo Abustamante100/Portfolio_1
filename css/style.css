@@ -2,17 +2,20 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
   background-color: #FCFCFC;
   font-family: soleil, sans-serif;
   color: #0D0D0D;
   display: grid;
-  height: 100%;
   width: 100%;
 }
 
-/*----------Font----------*/
-h1, h2, h3, h4, h5, p, a, button {
+/*------------------------------ fonts ------------------------------*/
+h1, h2, h3, h4, h5, p, a, button, li {
   line-height: 1.4;
 }
 
@@ -21,38 +24,47 @@ h1, h3, h4, h5 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3.2rem;
 }
 
 h2 {
-  font-size: 1.625em;
+  font-size: 2.6rem;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.125em;
+  font-size: 2rem;
 }
 
 h4 {
-  font-size: 1.0625em;
+  font-size: 1.8rem;
+}
+
+.hero h4 {
+  color: #353535;
 }
 
 h5 {
-  font-size: 0.875em;
+  font-size: 1.7rem;
 }
 
-p {
-  font-size: 1.0625em;
+h6 {
+  font-size: 1.4rem;
+}
+
+p, a, li {
+  font-size: 1.7rem;
 }
 
 figcaption {
-  font-size: 0.75em;
+  font-size: 1.2rem;
   color: #353535;
 }
 
 a {
   color: #353535;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 
 .footer a {
@@ -61,14 +73,27 @@ a {
 
 
 
-/*-----------Layout------------*/
+/*------------------------------ layout ------------------------------*/
 header {
   padding: 23px 16px;
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
 }
 
+ /* nav {
+  display: none;
+} */
+
 main {
-  padding: 48px 16px;
+  padding: 4.8em 16px;
+}
+
+.home {
+  padding-top: 9.6em;
+}
+
+ .hero {
+  text-align: center;
+  /* height: 100vh; */
 }
 
 .footer {
@@ -78,17 +103,21 @@ main {
 }
 
 
-/*------------elements----------*/
+/*------------------------------ elements ------------------------------*/
+
+/*----------buttons-----------*/
+
 button {
   background-color: #0D0D0D;
   color: #FCFCFC;
   border: none;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
-  padding: 12px;
+  font-size: 1.4rem;
+  padding: 0.8571em;
   width: 100%;
   font-weight: 700;
+  margin-top: 2.4rem;
 }
 
 .secondary {
@@ -97,9 +126,57 @@ button {
   border-color: #0D0D0D;
   border-style: solid;
   border-width: 1px;
+  margin-top: 1.2rem;
 }
 
 .footer button {
   color: #FCFCFC;
   border-color: #FCFCFC;
+  margin-top: 2.4rem;
+}
+
+.footer button:hover {
+  background-color: #FCFCFC;
+}
+
+button:hover {
+  color: #0D0D0D;
+  background-color: #D7D7D7;
+  border-color: #D7D7D7;
+}
+
+.projects button:hover {
+    background-color: #FCFCFC;
+}
+
+button:active, button:focus, .projects button:active, .projects button:focus, .footer button:active, .footer button:focus {
+  background-color: #353535;
+  color: #FCFCFC;
+  border-color: #353535;
+  outline: none;
+}
+
+/*---------- images -----------*/
+
+img {
+  width: 100%
+}
+
+.hero_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 42.93%;
+  padding-top: 1.2em;
+  padding-bottom: 2.4em;
+}
+
+.logo {
+  width: 42.93%;
+}
+
+.project_1 {
+  background-color: #C3D3E8;
+  margin-top: 2.4em;
+  padding: 4.8em 2.4em;
 }
