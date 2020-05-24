@@ -8,18 +8,18 @@ html {
 
 body {
   background-color: #FCFCFC;
-  font-family: soleil, sans-serif;
   color: #0D0D0D;
   display: grid;
-  width: 100%;
+  font-family: soleil, sans-serif;
+  min-width: 100vw;
 }
 
 /*------------------------------ fonts ------------------------------*/
-h1, h2, h3, h4, h5, p, a, button, li {
+h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label {
   line-height: 1.4;
 }
 
-h1, h3, h4, h5 {
+h1, h3, h4, h5, .label_d, .label_t, label {
   font-weight: 700;
 }
 
@@ -44,7 +44,7 @@ h4 {
   color: #353535;
 }
 
-h5 {
+h5, p, a, li  {
   font-size: 1.7rem;
 }
 
@@ -52,54 +52,91 @@ h6 {
   font-size: 1.4rem;
 }
 
-p, a, li {
-  font-size: 1.7rem;
-}
-
 figcaption {
-  font-size: 1.2rem;
   color: #353535;
+  font-size: 1.2rem;
 }
 
 a {
   color: #353535;
   text-decoration: none;
-  font-size: 1.4rem;
 }
 
-.footer a {
+.label_d, .label_t, label {
+  font-size: 1.2rem;
+}
+
+.label_d, .label_t {
+  color: #353535;
+}
+
+.email, .number {
   color: #D7D7D7;
+  font-size: 1.7rem;
 }
 
 
 
-/*------------------------------ layout ------------------------------*/
+/*------------------------------ structure ------------------------------*/
 header {
-  padding: 23px 16px;
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
+  padding: 23px 16px;
 }
 
- /* nav {
+ nav {
   display: none;
-} */
+}
 
 main {
-  padding: 4.8em 16px;
+  padding: 5.9113vh 16px;
 }
 
 .home {
-  padding-top: 9.6em;
+  padding-top: 11.8226vh;
 }
 
- .hero {
+.hero {
   text-align: center;
   /* height: 100vh; */
 }
 
+.projects {
+  padding-top: 4.6rem;
+}
+
+.CORE_h {
+  padding-top: 0.2em;
+}
+
+.label_t {
+  padding-top: 0.5em;
+}
+
+.CORE_copy {
+  padding-top: 0.7058em;
+}
+
 .footer {
-  background-color: #0D0D0D;
   color: #FCFCFC;
-  padding: 48px 16px 131px 16px;
+  background-color: #0D0D0D;
+  padding: 4.8em 16px 13.1em 16px;
+}
+
+.email, .number {
+  display: block;
+  padding-top: 0.7058em;
+}
+
+.form_heading {
+  margin-bottom: 0.6em;
+}
+
+.contact_info {
+  margin-top: 3.6em;
+}
+
+.contact_messsage {
+  margin-top: 3.6em;
 }
 
 
@@ -109,29 +146,29 @@ main {
 
 button {
   background-color: #0D0D0D;
-  color: #FCFCFC;
   border: none;
-  text-align: center;
-  text-decoration: none;
+  color: #FCFCFC;
   font-size: 1.4rem;
-  padding: 0.8571em;
-  width: 100%;
   font-weight: 700;
   margin-top: 2.4rem;
+  padding: 0.8571em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 
 .secondary {
   background-color: rgba(0, 0, 0, 0%);
-  color: #0D0D0D;
   border-color: #0D0D0D;
   border-style: solid;
   border-width: 1px;
+  color: #0D0D0D;
   margin-top: 1.2rem;
 }
 
 .footer button {
-  color: #FCFCFC;
-  border-color: #FCFCFC;
+  border-color: #353535;
+  color: #707070;
   margin-top: 2.4rem;
 }
 
@@ -140,43 +177,96 @@ button {
 }
 
 button:hover {
-  color: #0D0D0D;
   background-color: #D7D7D7;
   border-color: #D7D7D7;
+  color: #0D0D0D;
 }
 
 .projects button:hover {
-    background-color: #FCFCFC;
+  background-color: #FCFCFC;
 }
 
 button:active, button:focus, .projects button:active, .projects button:focus, .footer button:active, .footer button:focus {
   background-color: #353535;
-  color: #FCFCFC;
   border-color: #353535;
+  color: #FCFCFC;
   outline: none;
 }
 
 /*---------- images -----------*/
 
 img {
-  width: 100%
-}
-
-.hero_pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 42.93%;
-  padding-top: 1.2em;
-  padding-bottom: 2.4em;
+  width: 100%;
 }
 
 .logo {
   width: 42.93%;
 }
 
+.hero_pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2.4em;
+  padding-top: 1.2em;
+  width: 46.9387%;
+}
+
+.mobile_line {
+  background-image: url(../assets/images/homepage/mobile_line.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 30vh;
+  margin-top: 1.2em;
+  width: 100%;
+}
+
 .project_1 {
   background-color: #C3D3E8;
   margin-top: 2.4em;
   padding: 4.8em 2.4em;
+}
+
+.linkedin, .instagram, .twitter, .github {
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-size: 24px;
+ display: inline-block;
+ height: 24px;
+ margin-top: 12px;
+ margin-right: 12px;
+ width: 24px;
+}
+
+.linkedin {
+  background-image: url(../assets/icons/linkedin.png);
+}
+
+.instagram {
+  background-image: url(../assets/icons/instagram.png);
+}
+
+.twitter {
+  background-image: url(../assets/icons/twitter.png);
+}
+
+.github {
+  background-image: url(../assets/icons/github.png);
+}
+
+
+/*---------- Input Fields -----------*/
+
+input, textarea {
+  background-color: #353535;
+  border: none;
+  color: #707070;
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 1.2em;
+  margin-top: 0.6em;
+  padding: 0.7857em 1.1428em;
+  width: 100%;
 }
