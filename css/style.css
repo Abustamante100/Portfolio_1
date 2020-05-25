@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label {
   line-height: 1.4;
 }
 
-h1, h3, h4, h5, .label_d, .label_t, label {
+h1, h3, h4, h5, .label_d, .label_t, label, .quote {
   font-weight: 700;
 }
 
@@ -32,7 +32,7 @@ h2 {
   font-weight: 600;
 }
 
-h3 {
+h3, .quote {
   font-size: 2rem;
 }
 
@@ -44,7 +44,7 @@ h4 {
   color: #353535;
 }
 
-h5, p, a, li  {
+h5, p, a, li {
   font-size: 1.7rem;
 }
 
@@ -55,11 +55,29 @@ h6 {
 figcaption {
   color: #353535;
   font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+
+p {
+  margin-top: 0.7058em;
+}
+
+/* .first_p {
+  margin-top: 0.3529em;
+} */
+.CORE_first_p {
+  margin-top: 0.3529em;
 }
 
 a {
   color: #353535;
   text-decoration: none;
+}
+
+a:hover {
+  color: #0D0D0D;
+  text-decoration: underline;
+  text-decoration-color: #0D0D0D;
 }
 
 .label_d, .label_t, label {
@@ -75,7 +93,18 @@ a {
   font-size: 1.7rem;
 }
 
+.email:hover, .number:hover {
+  color: #FCFCFC;
+  text-decoration: underline;
+}
 
+.quote {
+  text-align: center;
+  margin-top: 1.8em;
+  padding: 0.6em 0px 0 0px;
+  border-top: 1px solid #0D0D0D;
+  border-bottom: 1px solid #0D0D0D;
+}
 
 /*------------------------------ structure ------------------------------*/
 header {
@@ -83,37 +112,47 @@ header {
   padding: 23px 16px;
 }
 
- nav {
+/* nav {
   display: none;
-}
-
+} */
 main {
-  padding: 5.9113vh 16px;
+  margin: 5.9113vh 16px;
 }
 
 .home {
-  padding-top: 11.8226vh;
+  margin-top: 11.8226vh;
 }
 
 .hero {
   text-align: center;
-  /* height: 100vh; */
 }
 
 .projects {
-  padding-top: 4.6rem;
+  margin-top: 4.6rem;
 }
 
 .CORE_h {
-  padding-top: 0.2em;
+  margin-top: 0.2em;
+}
+
+.label_d {
+  margin-top: 0px;
 }
 
 .label_t {
-  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .CORE_copy {
-  padding-top: 0.7058em;
+  margin-top: 0.7058em;
+}
+
+.section_1 {
+  margin-top: 3.6em;
+}
+
+.section_2 {
+  margin-top: 2.4em;
 }
 
 .footer {
@@ -124,7 +163,7 @@ main {
 
 .email, .number {
   display: block;
-  padding-top: 0.7058em;
+  margin-top: 0.7058em;
 }
 
 .form_heading {
@@ -139,11 +178,22 @@ main {
   margin-top: 3.6em;
 }
 
+ul, ol {
+  list-style-position: inside;
+  margin-left: 20px;
+  margin-top: 1.2em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
 
 /*------------------------------ elements ------------------------------*/
-
 /*----------buttons-----------*/
-
 button {
   background-color: #0D0D0D;
   border: none;
@@ -194,7 +244,6 @@ button:active, button:focus, .projects button:active, .projects button:focus, .f
 }
 
 /*---------- images -----------*/
-
 img {
   width: 100%;
 }
@@ -205,11 +254,12 @@ img {
 
 .hero_pic {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 2.4em;
-  padding-top: 1.2em;
+  margin: 1.2em auto 2.4em auto;
   width: 46.9387%;
+}
+
+.section_pic {
+  margin-top: 4.8em;
 }
 
 .mobile_line {
@@ -229,15 +279,15 @@ img {
 }
 
 .linkedin, .instagram, .twitter, .github {
- background-position: center;
- background-repeat: no-repeat;
- background-size: contain;
- background-size: 24px;
- display: inline-block;
- height: 24px;
- margin-top: 12px;
- margin-right: 12px;
- width: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 24px;
+  display: inline-block;
+  height: 24px;
+  margin-top: 12px;
+  margin-right: 12px;
+  width: 24px;
 }
 
 .linkedin {
@@ -256,9 +306,7 @@ img {
   background-image: url(../assets/icons/github.png);
 }
 
-
 /*---------- Input Fields -----------*/
-
 input, textarea {
   background-color: #353535;
   border: none;
@@ -269,4 +317,15 @@ input, textarea {
   margin-top: 0.6em;
   padding: 0.7857em 1.1428em;
   width: 100%;
+}
+
+textarea {
+  margin-bottom: 0px;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+  background-color: #FCFCFC;
+  color: #0D0D0D;
+  outline-color: #2375F0;
+  outline-width: thick;
 }
