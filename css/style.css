@@ -14,12 +14,12 @@ body {
   min-width: 100vw;
 }
 
-/*------------------------------ fonts ------------------------------*/
+/*=============================== fonts ===============================*/
 h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label {
   line-height: 1.4;
 }
 
-h1, h3, h4, h5, .label_d, .label_t, label, .quote {
+h1, h3, h4, h5, h6, .label_d, .label_t, label, .quote, .bold {
   font-weight: 700;
 }
 
@@ -48,7 +48,7 @@ h5, p, a, li {
   font-size: 1.7rem;
 }
 
-h6 {
+h6, .up_description {
   font-size: 1.4rem;
 }
 
@@ -62,11 +62,12 @@ p {
   margin-top: 0.7058em;
 }
 
-/* .first_p {
+.first_par {
   margin-top: 0.3529em;
-} */
-.CORE_first_p {
-  margin-top: 0.3529em;
+}
+
+.first_pic {
+  margin-top: 0.6em;
 }
 
 a {
@@ -80,14 +81,6 @@ a:hover {
   text-decoration-color: #0D0D0D;
 }
 
-.label_d, .label_t, label {
-  font-size: 1.2rem;
-}
-
-.label_d, .label_t {
-  color: #353535;
-}
-
 .email, .number {
   color: #D7D7D7;
   font-size: 1.7rem;
@@ -98,15 +91,24 @@ a:hover {
   text-decoration: underline;
 }
 
+.label_d, .label_t, label {
+  font-size: 1.2rem;
+}
+
+.label_d, .label_t {
+  color: #353535;
+}
+
 .quote {
   text-align: center;
   margin-top: 1.8em;
-  padding: 0.6em 0px 0 0px;
+  padding: 0.6em 0px 0.6em 0px;
   border-top: 1px solid #0D0D0D;
   border-bottom: 1px solid #0D0D0D;
 }
 
-/*------------------------------ structure ------------------------------*/
+/*=============================== structure ===============================*/
+/*--------- layout --------*/
 header {
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   padding: 23px 16px;
@@ -115,6 +117,7 @@ header {
 /* nav {
   display: none;
 } */
+
 main {
   margin: 5.9113vh 16px;
 }
@@ -131,6 +134,24 @@ main {
   margin-top: 4.6rem;
 }
 
+.footer {
+  color: #FCFCFC;
+  background-color: #0D0D0D;
+  padding: 4.8em 16px 13.1em 16px;
+}
+
+.about_me_photos {
+  width: 100%;
+  height: 100%;
+  margin-top: 4.8em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/*--------- words --------*/
+
+/*-- CORE --*/
 .CORE_h {
   margin-top: 0.2em;
 }
@@ -147,6 +168,7 @@ main {
   margin-top: 0.7058em;
 }
 
+/*-- about & case studies --*/
 .section_1 {
   margin-top: 3.6em;
 }
@@ -155,11 +177,19 @@ main {
   margin-top: 2.4em;
 }
 
-.footer {
-  color: #FCFCFC;
-  background-color: #0D0D0D;
-  padding: 4.8em 16px 13.1em 16px;
+.section_3 {
+  margin-top: 1.2em;
 }
+
+.cp_heading {
+  margin-top: 0.4285em;
+}
+
+.cp_par {
+  margin-top: 0px;
+}
+
+/*-- footer headings --*/
 
 .email, .number {
   display: block;
@@ -178,6 +208,9 @@ main {
   margin-top: 3.6em;
 }
 
+
+/*-- list --*/
+
 ul, ol {
   list-style-position: inside;
   margin-left: 20px;
@@ -192,7 +225,26 @@ ol {
   list-style-type: decimal;
 }
 
-/*------------------------------ elements ------------------------------*/
+.up_list {
+  list-style: none;
+  margin-left: 0px;
+}
+
+.mini_list_item, .up_mini_list_item {
+  font-size: 1.4rem;
+}
+
+.mini_list, .up_mini_list {
+  margin-top: 1.2em;
+}
+
+.items, .up_items {
+  margin-top: 0.6em;
+  margin-left: 0px;
+}
+
+
+/*=============================== elements ===============================*/
 /*----------buttons-----------*/
 button {
   background-color: #0D0D0D;
@@ -262,6 +314,14 @@ img {
   margin-top: 4.8em;
 }
 
+.inside_pic {
+  margin-top: 1.2em;
+}
+
+.main_pic {
+  margin-top: 1.2em;
+}
+
 .mobile_line {
   background-image: url(../assets/images/homepage/mobile_line.png);
   background-position: center;
@@ -272,11 +332,25 @@ img {
   width: 100%;
 }
 
-.project_1 {
+.project_1, .project_1_CORE {
   background-color: #C3D3E8;
   margin-top: 2.4em;
-  padding: 4.8em 2.4em;
+  padding-top: 4.8em;
+  padding-left: 2.4em;
+  padding-bottom: 2.5em;
 }
+
+.project_1_CORE {
+  margin-top: 1.2em;
+}
+
+.CORE_writing {
+  margin-right: 2.4em;
+  margin-bottom: 2.3em;
+}
+
+
+/*---------- icons -----------*/
 
 .linkedin, .instagram, .twitter, .github {
   background-position: center;
