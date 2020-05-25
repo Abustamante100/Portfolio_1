@@ -212,8 +212,8 @@ main {
 /*-- list --*/
 
 ul, ol {
-  list-style-position: inside;
-  margin-left: 20px;
+  list-style-position: outside;
+  margin-left: 32px;
   margin-top: 1.2em;
 }
 
@@ -240,7 +240,6 @@ ol {
 
 .items, .up_items {
   margin-top: 0.6em;
-  margin-left: 0px;
 }
 
 
