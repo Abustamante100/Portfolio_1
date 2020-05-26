@@ -413,7 +413,7 @@ img {
 
 /*---------- icons -----------*/
 
-.linkedin, .instagram, .twitter, .github {
+.linkedin, .instagram, .twitter, .github, .hamburger, .close {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -439,6 +439,14 @@ img {
 
 .github {
   background-image: url(../assets/icons/github.png);
+}
+
+.hamburger {
+  background-image: url(../assets/icons/hamburger.png);
+}
+
+.close {
+  background-image: url(../assets/icons/x.png);
 }
 
 /*---------- Input Fields -----------*/
