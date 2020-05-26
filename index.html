@@ -12,25 +12,35 @@
 
 <body>
 
-<!-- ========================== Nav bar ========================== -->
+  <!-- ========================== Nav bar ========================== -->
   <header>
     <a href="index.html">
       <img src="assets/images/homepage/logo.png" alt="Logo" class="logo">
     </a>
     <nav>
-      <ul>
-        <a href="CORE.html">Projects</a>
-        <a href="about.html">About</a>
-        <a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a>
-        <a href="#home_footer">Contact</a>
+      <ul class="navbar">
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="#CORE_footer">Contact</a></li>
       </ul>
     </nav>
+
+    <div id="side-menu" class="side-nav">
+      <a href="#" class="btn-close">&times;</a>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+      <a href="#">Contact</a>
+    </div>
+
   </header>
 
-<!-- ========================== Main Section ========================== -->
+  <!-- ========================== Main Section ========================== -->
 
   <main class="home">
-<!-- =========== hero ============ -->
+    <!-- =========== hero ============ -->
     <section class="hero">
       <h1>Arnold Bustamante</h1>
       <h4>UX/UI Designer based in NYC</h4>
@@ -40,26 +50,26 @@
       <!-- <img src="assets/images/homepage/mobile_line .png" alt="line leading to projects" class="mobile_line"> -->
     </section>
 
-<!-- =========== projects ============ -->
+    <!-- =========== projects ============ -->
     <section id="projects" class="projects">
       <h2>Projects</h2>
       <section class="project_1">
         <img src="assets/images/homepage/CORE_mockup.png" alt="A picture of CORE's Dashboard on both desktop and
             mobile">
-      <div class="CORE_writing">      
-        <h3 class="CORE_h">CORE</h3>
-        <p class="label_d">UX Research • Visual Design • Prototype & Testing • Branding & Identity Creation</p>
-        <p class="label_t">Duration: 5 weeks</p>
-        <p class="CORE_copy">A cloud file manager service dedicated to empowering the filmmaker. Gives users the ability to create, share and upload various files.</p>
-        <button type="button" name="vp" class="primary">View Case Study</button>
-        <button type="button" name="vp" class="secondary">View Prototype</button>
-</div>
+        <div class="CORE_writing">
+          <h3 class="CORE_h">CORE</h3>
+          <p class="label_d">UX Research • Visual Design • Prototype & Testing • Branding & Identity Creation</p>
+          <p class="label_t">Duration: 5 weeks</p>
+          <p class="CORE_copy">A cloud file manager service dedicated to empowering the filmmaker. Gives users the ability to create, share and upload various files.</p>
+          <button type="button" name="vp" class="primary">View Case Study</button>
+          <button type="button" name="vp" class="secondary">View Prototype</button>
+        </div>
       </section>
       </div>
     </section>
   </main>
 
-<!-- ========================== Footer ========================== -->
+  <!-- ========================== Footer ========================== -->
   <footer id="home_footer" class="footer">
     <h2>Contact</h2>
     <section class="contact_info">
@@ -85,6 +95,10 @@
       </form>
     </section>
   </footer>
+
+  <!-- ========================== Scripts ========================== -->
+
+  <script type="text/javascript"></script>
 
 </body>
 

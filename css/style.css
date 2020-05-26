@@ -23,6 +23,8 @@ h1, h3, h4, h5, h6, .label_d, .label_t, label, .quote, .bold {
   font-weight: 700;
 }
 
+/*--------- headings and paragraphs --------*/
+
 h1 {
   font-size: 3.2rem;
 }
@@ -58,17 +60,7 @@ figcaption {
   margin-top: 0.5em;
 }
 
-p {
-  margin-top: 0.7058em;
-}
-
-.first_par {
-  margin-top: 0.3529em;
-}
-
-.first_pic {
-  margin-top: 0.6em;
-}
+/*--------- links --------*/
 
 a {
   color: #353535;
@@ -91,6 +83,8 @@ a:hover {
   text-decoration: underline;
 }
 
+/*--------- projects --------*/
+
 .label_d, .label_t, label {
   font-size: 1.2rem;
 }
@@ -98,6 +92,8 @@ a:hover {
 .label_d, .label_t {
   color: #353535;
 }
+
+/*--------- about page quote --------*/
 
 .quote {
   text-align: center;
@@ -108,7 +104,10 @@ a:hover {
 }
 
 /*=============================== structure ===============================*/
+
 /*--------- layout --------*/
+
+/*----- Home -----*/
 header {
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   padding: 23px 16px;
@@ -140,6 +139,8 @@ main {
   padding: 4.8em 16px 13.1em 16px;
 }
 
+
+/*----- About -----*/
 .about_me_photos {
   width: 100%;
   height: 100%;
@@ -148,6 +149,50 @@ main {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
 }
+
+
+/*----- CORE -----*/
+.summary_list {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-template-rows: auto;
+  margin-top: 1.2em;
+}
+
+.tools, .duration {
+  grid-column: 1/2;
+}
+
+.deliverables {
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.up {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: auto;
+  grid-column-gap: 20px;
+}
+
+.demo {
+  grid-column: 1/2;
+}
+
+.up_GF {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.image_grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-column-gap:2.0em;
+  margin-top: 0.6em;
+}
+
 
 /*--------- words --------*/
 
@@ -177,8 +222,20 @@ main {
   margin-top: 2.4em;
 }
 
-.section_3 {
+.section_3, .first {
   margin-top: 1.2em;
+}
+
+p {
+  margin-top: 0.7058em;
+}
+
+.first_par {
+  margin-top: 0.3529em;
+}
+
+.first_pic {
+  margin-top: 0.6em;
 }
 
 .cp_heading {
@@ -225,7 +282,7 @@ ol {
   list-style-type: decimal;
 }
 
-.up_list {
+.demo {
   list-style: none;
   margin-left: 0px;
 }
@@ -234,12 +291,17 @@ ol {
   font-size: 1.4rem;
 }
 
-.mini_list, .up_mini_list {
+.goals, .demo, .frust, .tools, .duration, .deliverables, .what {
   margin-top: 1.2em;
 }
 
 .items, .up_items {
   margin-top: 0.6em;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0px;
 }
 
 
