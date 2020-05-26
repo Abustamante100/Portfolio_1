@@ -109,16 +109,16 @@ a:hover {
 
 /*=============================== structure ===============================*/
 /*--------- layout --------*/
-header {
+/* header {
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   padding: 23px 16px;
-}
+} */
 
 /* nav {
   display: none;
 } */
 
-main {
+/* main {
   margin: 5.9113vh 16px;
 }
 
@@ -147,7 +147,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-}
+} */
 
 /*--------- words --------*/
 

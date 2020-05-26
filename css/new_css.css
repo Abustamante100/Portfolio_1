@@ -1,0 +1,137 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #FCFCFC;
+  color: #0D0D0D;
+  display: grid;
+  font-family: soleil, sans-serif;
+  min-width: 100vw;
+}
+
+/*=============================== fonts ===============================*/
+h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label {
+  line-height: 1.4;
+}
+
+h1, h3, h4, h5, h6, .label_d, .label_t, label, .quote, .bold {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+h3, .quote {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+.hero h4 {
+  color: #353535;
+}
+
+h5, p, a, li {
+  font-size: 1.7rem;
+}
+
+h6, .up_description {
+  font-size: 1.4rem;
+}
+
+figcaption {
+  color: #353535;
+  font-size: 1.2rem;
+  margin-top: 0.5em;
+}
+
+p {
+  margin-top: 0.7058em;
+}
+
+.first_par {
+  margin-top: 0.3529em;
+}
+
+.first_pic {
+  margin-top: 0.6em;
+}
+
+a {
+  color: #353535;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0D0D0D;
+  text-decoration: underline;
+  text-decoration-color: #0D0D0D;
+}
+
+.email, .number {
+  color: #D7D7D7;
+  font-size: 1.7rem;
+}
+
+.email:hover, .number:hover {
+  color: #FCFCFC;
+  text-decoration: underline;
+}
+
+.label_d, .label_t, label {
+  font-size: 1.2rem;
+}
+
+.label_d, .label_t {
+  color: #353535;
+}
+
+.quote {
+  text-align: center;
+  margin-top: 1.8em;
+  padding: 0.6em 0px 0.6em 0px;
+  border-top: 1px solid #0D0D0D;
+  border-bottom: 1px solid #0D0D0D;
+}
+
+/*=============================== structure ===============================*/
+
+header {
+  box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
+  padding: 23px 16px;
+}
+
+main {
+  margin-left: 16px;
+  margin-right: 16px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-column-gap: 20px;
+  align-items: start;
+}
+
+.hero {
+  grid-column: 1/5;
+}
+
+.hero h1 {
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  grid-column: 2/4;
+}
