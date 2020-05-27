@@ -1,11 +1,15 @@
-// let toggleNavStatus = true;
-//
-// let toggleNavStatus = function() {
-//   let getSideNav = document.querySelector("#side-nav");
-//   let getSideNavList = document.querySelector("#side-list");
-//   let getSideNavIcons = document.querySelector("#sn-icons")
-//
-//   if(toggleNavStatus) === true {
-//     getSideNavList.style.visibility = "hidden";
-//   }
-// }
+const navSlide = () => {
+  const burger = document.querySelector ('.burger');
+  const nav = document.querySelector ('.navbar');
+  const header = document.querySelector ('header');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('nav-active');
+    navLink.classList.toggle('nav-active');
+    header.classList.toggle('header-active');
+    burger.classList.toggle('toggle');
+  });
+
+}
+
+navSlide();
