@@ -1,9 +1,11 @@
-// 
-// function openSlideMenu() {
-//   document.getElementById('side-menu').style.width = "200px";
-//   document.getElementById('main').style.margin = "400px";
+// let toggleNavStatus = true;
+//
+// let toggleNavStatus = function() {
+//   let getSideNav = document.querySelector("#side-nav");
+//   let getSideNavList = document.querySelector("#side-list");
+//   let getSideNavIcons = document.querySelector("#sn-icons")
+//
+//   if(toggleNavStatus) === true {
+//     getSideNavList.style.visibility = "hidden";
+//   }
 // }
-//
-// #btn-hamburger.onclick= openSlideMenu()
-//
-// #btn-close.onclick= closeSlideMenu()
