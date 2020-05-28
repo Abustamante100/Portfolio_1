@@ -12,34 +12,50 @@
 
 <body>
 
-<!-- ========================== Nav bar ========================== -->
+  <!-- ========================== Nav bar ========================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="assets/images/homepage/logo.png" alt="Logo" class="logo">
-    </a>
-    <nav>
+  <header id="header">
+    <nav id="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/images/homepage/logo.png" alt="logo">
+      </a>
       <ul class="navbar">
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="#CORE_footer">Contact</a></li>
+        <li class="first-nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="index.html#projects" class="project">Projects</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
+        <li class="nav-link"><a href="about.html#About_footer" class="contact">Contact</a></li>
+
+        <div id="sn-icons" class="sn-icons">
+          <p>Follow me </p>
+          <a href="https://www.linkedin.com/in/arnold-bustamante/" class="sn-linkedin" target="_blank"></a>
+          <a href="https://www.instagram.com/arnoldbustamove/" class="sn-instagram" target="_blank"></a>
+          <a href="https://twitter.com/arnoldbustamove" class="sn-twitter" target="_blank"></a>
+          <a href="https://github.com/Abustamante100" class="sn-github" target="_blank"> </a>
+        </div>
+
       </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </header>
 
-<!-- ========================== Main Section ========================== -->
+  <!-- ========================== Main Section ========================== -->
 
   <main>
     <h2>About</h2>
     <img src="assets/images/about/main_pic.png" alt="Picture of me smiling!" class="main_pic">
 
-<!-- =========== quote ============ -->
+    <!-- =========== quote ============ -->
     <div>
       <p class="quote">I wasn't born with the passion for design. I had to earn it.</p>
     </div>
 
-<!-- =========== article ============ -->
+    <!-- =========== article ============ -->
     <div>
       <section class="section_1">
         <h4>Childhood</h4>
@@ -61,7 +77,8 @@
 
       <section class="section_1">
         <h4>A Need for Change</h4>
-        <p class="first_par">After 8 years of doing customer service I needed to get out. While I felt like the lessons I learned were valuable, I needed a change. I thought about potential career transitions - personal trainer, architect, HR manager,
+        <p class="first_par">After 8 years of doing customer service I needed to get out. While I felt like the lessons I learned were valuable, I needed a change. I thought about potential career transitions - personal trainer, architect, HR
+          manager,
           New York Giants starting quarterback. None of those felt right.</p>
         <p>Eventually I landed on web design. I always viewed myself as a visual person and I enjoyed building my personal Squarespace website. So I decided to give it a try. </p>
       </section>
@@ -81,7 +98,7 @@
     </div>
 
 
-<!-- =========== pictures ============ -->
+    <!-- =========== pictures ============ -->
     <section class="about_me_photos">
       <img src="assets/images/about/baby.png" alt="A picture of my brother and I as children">
       <img src="assets/images/about/parents.png" alt="A Picture of my parents">
@@ -94,9 +111,9 @@
     </section>
   </main>
 
-<!-- ========================== Footer ========================== -->
+  <!-- ========================== Footer ========================== -->
 
-  <footer id="home_footer" class="footer">
+  <footer id="About_footer" class="footer">
     <h2>Contact</h2>
     <section class="contact_info">
       <h4>Hit me Up</h4>
@@ -121,6 +138,11 @@
       </form>
     </section>
   </footer>
+
+  <!-- ========================== Scripts ========================== -->
+
+  <script src="scripts/nav.js"></script>
+
 
 </body>
 

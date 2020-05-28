@@ -17,8 +17,8 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 568px) {
-
+.body-active {
+  position: fixed;
 }
 
 /*=============================== fonts ===============================*/
@@ -30,7 +30,7 @@ h1, h3, h4, h5, h6, .label_d, .label_t, label, .quote, .bold {
   font-weight: 700;
 }
 
-/*--------- headings and paragraphs --------*/
+/* ============= headings and paragraphs ============= */
 h1 {
   font-size: 3.2rem;
 }
@@ -66,7 +66,7 @@ figcaption {
   margin-top: 0.5em;
 }
 
-/*--------- links --------*/
+/* ============= Links ============= */
 a {
   color: #353535;
   text-decoration: none;
@@ -97,7 +97,7 @@ a:hover {
   color: #353535;
 }
 
-/*--------- about page quote --------*/
+/* ============= Quote ============= */
 .quote {
   text-align: center;
   margin-top: 1.8em;
@@ -107,10 +107,8 @@ a:hover {
 }
 
 /*=============================== structure ===============================*/
-
-/*================= layout =================*/
-
-/*============ Nav ========= */
+/* ============= Layout ============= */
+/*======= Nav ======= */
 header {
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   background-color: #FCFCFC;
@@ -149,7 +147,7 @@ nav {
 }
 
 .toggle .line1 {
-  transform: rotate(-45deg) translate(-5px,6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -157,7 +155,7 @@ nav {
 }
 
 .toggle .line3 {
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .navbar a {
@@ -184,14 +182,16 @@ nav {
   text-align: center;
   transform: translate(100%);
   transition: transform 0.4s ease;
+  list-style: none;
+  margin: 0px;
 }
 
- .nav-active {
- transform: translate(0%);
+.nav-active {
+  transform: translate(0%);
 }
 
 .sn-icons {
-  margin-top: 60px;
+  margin-top: 36px;
 }
 
 @media screen and (min-width: 568px) {
@@ -231,39 +231,7 @@ nav {
   }
 }
 
-/*----- Home -----*/
-/* .navbar {
-  display: none;
-}
-
-.side-nav {
-  background-color: #D7D7D7;
-  right:0px;
-  top: 0px;
-  width:71.333vw;
-  height: 100vh;
-  z-index: 1000;
-  position: fixed;
-  text-align: right;
-}
-
-.sn-item {
-    color: #353535;
-    text-align: center;
-    margin-top: 3.6rem;
-    font-weight: 700;
-}
-
-.sn-item a {
-  font-size: 2.6rem;
-}
-
-.sn-icons {
-  width: inherit;
-  position: absolute;
-  bottom: 24px;
-  text-align: center;
-} */
+/*======= Home ======= */
 main {
   margin: 5.9113vh 16px;
 }
@@ -281,13 +249,7 @@ main {
   margin-top: 4.6rem;
 }
 
-.footer {
-  color: #FCFCFC;
-  background-color: #0D0D0D;
-  padding: 4.8em 16px 13.1em 16px;
-}
-
-/*----- About -----*/
+/*======= About  ======= */
 .about_me_photos {
   width: 100%;
   height: 100%;
@@ -297,7 +259,41 @@ main {
   grid-gap: 20px;
 }
 
-/*----- CORE -----*/
+/*--- Words ---*/
+/* about & case studies */
+.section_1 {
+  margin-top: 3.6em;
+}
+
+.section_2 {
+  margin-top: 2.4em;
+}
+
+.section_3, .first {
+  margin-top: 1.2em;
+}
+
+p {
+  margin-top: 0.7058em;
+}
+
+.first_par {
+  margin-top: 0.3529em;
+}
+
+.first_pic {
+  margin-top: 0.6em;
+}
+
+.cp_heading {
+  margin-top: 0.4285em;
+}
+
+.cp_par {
+  margin-top: 0px;
+}
+
+/*======= CORE  ======= */
 .summary_list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -339,8 +335,7 @@ main {
   margin-top: 0.6em;
 }
 
-/*--------- words --------*/
-/*-- CORE --*/
+/*--- Words ---*/
 .CORE_h {
   margin-top: 0.2em;
 }
@@ -357,40 +352,15 @@ main {
   margin-top: 0.7058em;
 }
 
-/*-- about & case studies --*/
-.section_1 {
-  margin-top: 3.6em;
+/*======= Footer  ======= */
+.footer {
+  color: #FCFCFC;
+  background-color: #0D0D0D;
+  padding: 4.8em 16px 13.1em 16px;
 }
 
-.section_2 {
-  margin-top: 2.4em;
-}
-
-.section_3, .first {
-  margin-top: 1.2em;
-}
-
-p {
-  margin-top: 0.7058em;
-}
-
-.first_par {
-  margin-top: 0.3529em;
-}
-
-.first_pic {
-  margin-top: 0.6em;
-}
-
-.cp_heading {
-  margin-top: 0.4285em;
-}
-
-.cp_par {
-  margin-top: 0px;
-}
-
-/*-- footer headings --*/
+/*-- words --*/
+/* footer headings */
 .email, .number {
   display: block;
   margin-top: 0.7058em;
@@ -408,7 +378,8 @@ p {
   margin-top: 3.6em;
 }
 
-/*-- list --*/
+/*=============================== elements ===============================*/
+/*======= List  ======= */
 ul, ol {
   list-style-position: outside;
   margin-left: 32px;
@@ -440,13 +411,7 @@ ol {
   margin-top: 0.6em;
 }
 
-.navbar, .side-list {
-  list-style: none;
-  margin: 0px;
-}
-
-/*=============================== elements ===============================*/
-/*----------buttons-----------*/
+/*======= Buttons ======= */
 button {
   background-color: #0D0D0D;
   border: none;
@@ -496,7 +461,7 @@ button:active, button:focus, .projects button:active, .projects button:focus, .f
   outline: none;
 }
 
-/*---------- images -----------*/
+/*======= Images ======= */
 img {
   width: 100%;
 }
@@ -559,7 +524,7 @@ img {
   margin-bottom: 2.3em;
 }
 
-/*---------- icons -----------*/
+/*======= Icons  ======= */
 .linkedin, .instagram, .twitter, .github, .sn-linkedin, .sn-instagram, .sn-twitter, .sn-twitter, .sn-github {
   background-position: center;
   background-repeat: no-repeat;
@@ -605,8 +570,7 @@ img {
   margin-right: 0px;
 }
 
-
-/*---------- Input Fields -----------*/
+/*======= Input fields ======= */
 input, textarea {
   background-color: #353535;
   border: none;

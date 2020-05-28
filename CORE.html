@@ -14,17 +14,33 @@
 
   <!-- ========================== Nav bar ========================== -->
 
-  <header>
-    <a href="index.html">
-      <img src="assets/images/homepage/logo.png" alt="Logo" class="logo">
-    </a>
-    <nav>
+  <header id="header">
+    <nav id="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/images/homepage/logo.png" alt="logo">
+      </a>
       <ul class="navbar">
-        <li><a href="index.html#projects">Projects</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
-        <li><a href="#CORE_footer">Contact</a></li>
+        <li class="first-nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="index.html#projects" class="project">Projects</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
+        <li class="nav-link"><a href="CORE.html#CORE_footer" class="contact">Contact</a></li>
+
+        <div id="sn-icons" class="sn-icons">
+          <p>Follow me </p>
+          <a href="https://www.linkedin.com/in/arnold-bustamante/" class="sn-linkedin" target="_blank"></a>
+          <a href="https://www.instagram.com/arnoldbustamove/" class="sn-instagram" target="_blank"></a>
+          <a href="https://twitter.com/arnoldbustamove" class="sn-twitter" target="_blank"></a>
+          <a href="https://github.com/Abustamante100" class="sn-github" target="_blank"> </a>
+        </div>
+
       </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </header>
 
@@ -554,7 +570,7 @@
 
   <!-- ========================== Footer ========================== -->
 
-  <footer id="home_footer" class="footer">
+  <footer id="CORE_footer" class="footer">
     <h2>Contact</h2>
     <section class="contact_info">
       <h4>Hit me Up</h4>
@@ -579,6 +595,10 @@
       </form>
     </section>
   </footer>
+
+  <!-- ========================== Scripts ========================== -->
+
+  <script src="scripts/nav.js"></script>
 
 </body>
 
