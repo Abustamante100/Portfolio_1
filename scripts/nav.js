@@ -1,3 +1,7 @@
+$(window).resize(function() {
+  location.reload();
+});
+
 // Mobile nav
   if (screen.width <= 568) {
 
@@ -40,14 +44,3 @@
     navSlide();
 
   };
-
-//refresh nav when resize
-const windowResize = function() {
-
-  window.addEventListener('resize', () => {
-    location.reload();
-  });
-
-};
-
-windowResize();
