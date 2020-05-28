@@ -4,6 +4,7 @@
 
 html {
   font-size: 62.5%;
+  overflow: auto;
 }
 
 body {
@@ -11,6 +12,13 @@ body {
   color: #0D0D0D;
   display: grid;
   font-family: soleil, sans-serif;
+  position: absolute;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media screen and (min-width: 568px) {
+
 }
 
 /*=============================== fonts ===============================*/
@@ -99,15 +107,10 @@ a:hover {
 }
 
 /*=============================== structure ===============================*/
-/*--------- layout --------*/
-/*----- Home -----*/
-/* header {
-  box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
-  padding: 23px 16px;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-column-gap: 20px;
-} */
+
+/*================= layout =================*/
+
+/*============ Nav ========= */
 header {
   box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   background-color: #FCFCFC;
@@ -159,7 +162,7 @@ nav {
 
 .navbar a {
   font-size: 2.6rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #353535;
 }
 
@@ -172,25 +175,28 @@ nav {
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   right: 0px;
   top: 78px;
   height: 100vh;
   width: 100%;
   background-color: #FCFCFC;
   text-align: center;
-  transform: translateX(100%);
-  transition: transform 0.4s ease-in;
+  transform: translate(100%);
+  transition: transform 0.4s ease;
 }
 
  .nav-active {
- transform: translateX(0%);
+ transform: translate(0%);
 }
 
-@media screen and (min-width: 768px) {
+.sn-icons {
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 568px) {
   header {
     box-shadow: none;
-    position: fixed;
   }
 
   .burger {
@@ -217,6 +223,10 @@ nav {
   }
 
   .first-nav-li {
+    display: none;
+  }
+
+  .sn-icons {
     display: none;
   }
 }
@@ -264,6 +274,7 @@ main {
 
 .hero {
   text-align: center;
+  height: 100%;
 }
 
 .projects {
@@ -491,7 +502,11 @@ img {
 }
 
 .logo {
-  width: 100%
+  width: 100%;
+}
+
+.logo-active {
+  visibility: hidden;
 }
 
 @media screen and (min-width: 378px) {
@@ -523,9 +538,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 30vh;
+  height: 35vh;
   margin-top: 1.2em;
-  width: 100%;
 }
 
 .project_1, .project_1_CORE {
