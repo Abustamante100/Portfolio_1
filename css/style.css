@@ -75,7 +75,12 @@ a {
 a:hover {
   color: #0D0D0D;
   text-decoration: underline;
-  text-decoration-color: #0D0D0D;
+}
+
+.navbar a:hover, .hero a:hover {
+  color: #0D0D0D;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
 }
 
 .email, .number {
@@ -110,13 +115,13 @@ a:hover {
 /* ============= Layout ============= */
 /*======= Nav ======= */
 header {
-  box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
   background-color: #FCFCFC;
   width: 100%;
 }
 
-.header-active {
+.header-scroll {
   position: fixed;
+  box-shadow: 2px 4px 5px rgba(13, 13, 13, .25);
 }
 
 nav {
@@ -167,6 +172,15 @@ nav {
 .nav-link {
   margin-top: 36px;
 }
+
+/* .navbar a:hover {
+  color: #0D0D0D;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+} */
+
+
+
 
 .first-nav-li {
   margin-top: 60px;
@@ -481,6 +495,10 @@ img {
   width: 100%;
 }
 
+.logo:hover{
+  border-bottom: none;
+}
+
 .logo-active {
   visibility: hidden;
 }
@@ -592,15 +610,15 @@ input, textarea {
   margin-top: 0.6em;
   padding: 0.7857em 1.1428em;
   width: 100%;
+  font-family: inherit;
 }
 
 textarea {
   margin-bottom: 0px;
+  font-family: inherit;
 }
 
 .input:active, .input:focus {
-  background-color: #FCFCFC;
   color: #0D0D0D;
   outline-color: #2375F0;
-  outline-width: thick;
 }
