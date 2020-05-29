@@ -1,70 +1,116 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title> Portfolio | Arnold Bustamante </title>
-  </head>
-  <body>
 
-<!-- Nav bar -->
-    <header>
-      <a href="index.html">
-        <img src="assets/images/homepage/logo.png" alt="Logo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Portfolio | Arnold Bustamante </title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="https://use.typekit.net/hej3ysz.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body class="body">
+
+  <!-- ========================== Nav bar ========================== -->
+  <header id="header">
+    <nav id="nav">
+      <a href="index.html" class="logo">
+        <img src="assets/images/homepage/logo.png" alt="logo">
       </a>
-      <nav>
-        <ul>
-          <a href="CORE.html">Projects</a>
-          <a href="about.html">About</a>
-          <a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a>
-          <a href="#home_footer">Contact</a>
-        </ul>
-      </nav>
-    </header>
+      <ul class="navbar">
+        <li class="first-nav-li"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a href="index.html#projects" class="project">Projects</a></li>
+        <li class="nav-link"><a href="about.html">About</a></li>
+        <li class="nav-link"><a href="resources/Arnold_Bustamante_Design_Resume.pdf" target="_blank">Resume</a></li>
+        <li class="nav-link"><a href="index.html#home_footer" class="contact">Contact</a></li>
 
-<!-- Hero -->
-    <section>
+        <div id="sn-icons" class="sn-icons">
+          <p>Follow me </p>
+          <a href="https://www.linkedin.com/in/arnold-bustamante/" class="sn-linkedin" target="_blank"></a>
+          <a href="https://www.instagram.com/arnoldbustamove/" class="sn-instagram" target="_blank"></a>
+          <a href="https://twitter.com/arnoldbustamove" class="sn-twitter" target="_blank"></a>
+          <a href="https://github.com/Abustamante100" class="sn-github" target="_blank"> </a>
+        </div>
+
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================== Main Section ========================== -->
+
+  <main id="main" class="home">
+    <!-- =========== hero ============ -->
+    <section class="hero">
       <h1>Arnold Bustamante</h1>
       <h4>UX/UI Designer based in NYC</h4>
-      <img src="assets/images/homepage/hero.png" alt="A picture of me smiling!">
-      <a href="#projects">See my work</a>
+      <img src="assets/images/homepage/hero.png" alt="A picture of me smiling!" class="hero_pic">
+      <a href="#projects" class="smw">See my work</a>
+      <div class="mobile_line"></div>
+      <!-- <img src="assets/images/homepage/mobile_line .png" alt="line leading to projects" class="mobile_line"> -->
     </section>
 
-<!-- Projects -->
-    <section id="projects">
+    <!-- =========== projects ============ -->
+    <section id="projects" class="projects">
       <h2>Projects</h2>
-      <div class="project_1">
+      <section class="project_1">
         <img src="assets/images/homepage/CORE_mockup.png" alt="A picture of CORE's Dashboard on both desktop and
-        mobile">
-        <h3>CORE</h3>
-        <p>UX Research • Visual Design • Prototype & Testing • Branding & Identity Creation</p>
-        <p>Duration: 5 weeks</p>
-        <p>A cloud file manager service dedicated to empowering the filmmaker. Gives users the ability to create, share and upload various files.</p>
-        <button type="button" name="primary">View Case Study</button>
-        <button type="button" name="secondary">View Prototype</button>
+            mobile">
+        <div class="CORE_writing">
+          <h3 class="CORE_h">CORE</h3>
+          <p class="label_d">UX Research • Visual Design • Prototype & Testing • Branding & Identity Creation</p>
+          <p class="label_t">Duration: 5 weeks</p>
+          <p class="CORE_copy">A cloud file manager service dedicated to empowering the filmmaker. Gives users the ability to create, share and upload various files.</p>
+          <a href="CORE.html">
+            <button type="button" name="vp" class="primary">View Case Study</button>
+          </a>
+          <a href="https://www.figma.com/proto/DecWEMCNf1RgWeBWxqjgE8/Mod-10-Cloud-Hi-Fi-Mockups-3rd-iteration?node-id=64%3A66&viewport=457%2C200%2C0.05489811301231384&scaling=min-zoom" target="_blank">
+            <button type="button" name="vp" class="secondary">View Prototype</button>
+          </a>
+        </div>
+      </section>
       </div>
     </section>
+  </main>
 
-<!-- Footer -->
-    <footer id="home_footer">
-      <h2>Contact</h2>
-      <section>
-        <h4>Hit me Up</h4>
-        <a href="mailto: ArnoldBustamante@Gmail.com">ArnoldBustamante@Gmail.com</a>
-        <a href="tel:+1-718-730-0827">(718)730-0827</a>
-      </section>
-      <section>
-        <h4>Leave a message!</h4>
-        <form action="index.html" method="post">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" placeholder="Type in name..." required>
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" placeholder="Type in email..." required>
-          <label for="message">Message</label>
-          <textarea name="message" rows="6" cols="30" id="message" placeholder="Type in message..." required></textarea>
-          <button type="submit" name="Send">Send</button>
-        </form>
-      </section>
-    </footer>
+  <!-- ========================== Footer ========================== -->
+  <footer id="home_footer" class="footer">
+    <h2>Contact</h2>
+    <section class="contact_info">
+      <h4>Hit me Up</h4>
+      <a href="mailto: ArnoldBustamante@Gmail.com" class="email">ArnoldBustamante@Gmail.com</a>
+      <a href="tel:+1-718-730-0827" class="number">(718)730-0827</a>
+      <a href="https://www.linkedin.com/in/arnold-bustamante/" class="linkedin" target="_blank"></a>
+      <a href="https://www.instagram.com/arnoldbustamove/" class="instagram" target="_blank"></a>
+      <a href="https://twitter.com/arnoldbustamove" class="twitter" target="_blank"></a>
+      <a href="https://github.com/Abustamante100" class="github" target="_blank"> </a>
+    </section>
 
-  </body>
+    <section class="contact_messsage">
+      <h4 class="form_heading">Leave a Message!</h4>
+      <form action="index.html" action="contactform.php" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="input" placeholder="Type in name..." required>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="input" placeholder="Type in email..." required>
+        <label for="message">Message</label>
+        <textarea name="message" rows="6" cols="30" id="message" class="input" placeholder="Type in message..." required></textarea>
+        <button type="submit" name="submit" id="footerBtn" class="footerBtn" disabled="true">Send</button>
+      </form>
+    </section>
+  </footer>
+
+  <!-- ========================== Scripts ========================== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/nav.js"></script>
+  <script src="scripts/input.js"></script>
+
+</body>
+
 </html>
