@@ -489,7 +489,7 @@ nav {
 /* footer headings */
 .email, .number {
   display: block;
-  margin-top: 12px;
+  margin-top: 0.7058em;
 }
 
 .form_heading {
@@ -541,6 +541,7 @@ nav {
 
   .email, .number {
     font-size: 1.6rem;
+    margin-top: 0.75em;
   }
 }
 
@@ -569,10 +570,6 @@ nav {
     margin-bottom: 1.2em;
     text-align: left;
     margin-left: 130px;
-  }
-
-  .email, .number {
-    margin-top: 0.75em;
   }
 }
 
