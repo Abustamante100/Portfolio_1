@@ -1,6 +1,30 @@
-$(window).resize(function() {
-  location.reload();
+//refresh on resize
+jQuery(document).ready(function($) {
+
+  // Store the window width
+  var windowWidth = $(window).width();
+
+  // Resize Event
+  $(window).resize(function() {
+
+    // Check window width has actually changed and it's not just iOS triggering a resize event on scroll
+    if ($(window).width() != windowWidth) {
+
+      // Update the window width for next time
+      windowWidth = $(window).width();
+      location.reload();
+
+      // Do stuff here
+
+    }
+
+    // Otherwise do nothing
+
+  });
+
 });
+
+
 
 // Mobile nav
 if (screen.width <= 568) {
