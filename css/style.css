@@ -396,7 +396,7 @@ nav {
 }
 
 .first-nav-li {
-  margin-top: 60px;
+  margin-top: 48px;
 }
 
 .navbar {
@@ -419,6 +419,14 @@ nav {
 
 .sn-icons {
   margin-top: 36px;
+}
+
+.sn-icons p {
+  margin-top: 0px;
+}
+
+.sn-icons a {
+  margin-top: 12px;
 }
 
 @media (min-width: 568px) {
@@ -481,7 +489,7 @@ nav {
 /* footer headings */
 .email, .number {
   display: block;
-  margin-top: 0.7058em;
+  margin-top: 12px;
 }
 
 .form_heading {
@@ -530,6 +538,10 @@ nav {
   .contact_messsage h4 {
     margin-bottom: 0.4615em;
   }
+
+  .email, .number {
+    font-size: 1.6rem;
+  }
 }
 
 @media (min-width: 1152px) {
@@ -557,6 +569,10 @@ nav {
     margin-bottom: 1.2em;
     text-align: left;
     margin-left: 130px;
+  }
+
+  .email, .number {
+    margin-top: 0.75em;
   }
 }
 
@@ -832,6 +848,34 @@ nav {
   margin-top: 0px;
 }
 
+@media (min-width: 568px) {
+  .up {
+    grid-template-rows: auto;
+    grid-template-areas:
+      "one top"
+      "one bottom";
+    margin-top: 0.6em;
+  }
+
+  .up-pic {
+    grid-area: one;
+    margin-top: 0px;
+  }
+
+  .demo {
+    grid-area: top;
+    margin: 0px;
+  }
+
+  .up_GF {
+    grid-area: bottom;
+  }
+
+  .goals {
+    margin: 0px;
+  }
+}
+
 @media (min-width: 768px) {
   .c-section-1 {
     display: grid;
@@ -894,6 +938,10 @@ nav {
 
   .section_4 h6 {
     margin-top: 0px;
+  }
+
+  .up-p {
+    margin-top: 1.5em;
   }
 }
 
@@ -961,36 +1009,6 @@ nav {
 
   .first_pic {
     margin-top: 1.2em;
-  }
-
-  .up {
-    grid-template-rows: auto;
-    grid-template-areas:
-      "one top"
-      "one bottom";
-    margin-top: 0.6em;
-  }
-
-  .up-pic {
-    grid-area: one;
-    margin-top: 0px;
-  }
-
-  .demo {
-    grid-area: top;
-    margin: 0px;
-  }
-
-  .up_GF {
-    grid-area: bottom;
-  }
-
-  .goals {
-    margin: 0px;
-  }
-
-  .up-p {
-    margin-top: 1.5em;
   }
 
   .section_4 {
@@ -1111,8 +1129,15 @@ nav {
   display: inline-block;
   height: 24px;
   margin-top: 12px;
-  margin-right: 12px;
+  margin-right: 24px;
   width: 24px;
+}
+
+@media (min-width: 1152px) {
+  .linkedin, .instagram, .twitter, .github {
+    margin-right: 0.75em;
+    margin-top: 0.75em;
+  }
 }
 
 .linkedin {
