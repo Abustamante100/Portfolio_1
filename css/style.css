@@ -47,10 +47,22 @@ img {
 
 @media (min-width: 1152px) {
   main {
-    margin: 6.0em 9.0277vw 9.6em 9.0277vw;
+    margin: 6.0em 13em 9.6em 13em;
     height: auto;
   }
+
+  main, .nav, .footer-Content {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-content {
+    padding-left: auto;
+    padding-right: auto;
+  }
 }
+
 
 /*=============================== Typography ===============================*/
 h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label {
@@ -352,8 +364,7 @@ nav {
   margin-right: 16px;
   align-items: center;
   min-height: 80px;
-  max-height: 88px;
-  height: 6.1111vw;
+  height: 8.8em;
 }
 
 .burger {
@@ -469,8 +480,8 @@ nav {
 
 @media (min-width: 1152px) {
   nav {
-    margin-left: 9.0277vw;
-    margin-right: 9.0277vw;
+    margin-left: 13em;
+    margin-right: 13em;
   }
 }
 
@@ -550,11 +561,11 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2em;
-    padding: 8.4em 9.0277vw 9.6em 9.0277vw;
+    padding: 8.4em 13em 9.6em 13em;
   }
 
   .contact_info, .contact_messsage {
-    margin-top: 2.5vh;
+    margin-top: 1.6em;
   }
 
   .contact_info {
@@ -671,7 +682,7 @@ nav {
 
   /* ==== Projects ==== */
   .projects {
-    margin-top: 10.7vh
+    margin-top: 10.8em;
   }
 
   .p-container2 button {
@@ -708,7 +719,7 @@ nav {
   margin-top: 2.4em;
 }
 
-.section_3, .first {
+.section_3, .section_3-grid, .first {
   margin-top: 1.2em;
 }
 
@@ -723,7 +734,7 @@ nav {
 @media (min-width: 768px) {
   .about-main {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     height: auto;
     grid-column-gap: 20px;
   }
@@ -738,7 +749,53 @@ nav {
   }
 
   .about-main h2 {
-    grid-column-start: 1;
+    grid-column: 1/9;
+    grid-row-start: 1;
+  }
+
+  .main_pic {
+    grid-column: 1/9;
+    grid-row: 2/3;
+  }
+
+  .about-quote {
+    grid-column: 2/8;
+    grid-row: 3/4;
+  }
+
+  .about-story {
+    grid-column: 2/8;
+    grid-row: 4/5;
+  }
+
+  .about-photos {
+    grid-column: 1/9;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 6em;
+    grid-gap: 20px;
+  }
+
+  .section_1, .c-section-1 {
+    margin-top: 4.8em;
+  }
+
+  .first_par, .first_par2 {
+    margin-top: 0.75em;
+  }
+}
+
+@media (min-width: 1152px) {
+  .about-main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-column-gap: 20px;
+  }
+
+  .about-main h2 {
+    grid-column: 1/5;
     grid-row-start: 1;
   }
 
@@ -794,21 +851,6 @@ nav {
   grid-row: 1/4;
 }
 
-.up {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
-}
-
-.demo {
-  grid-column: 1/2;
-}
-
-.up_GF {
-  grid-column: 2/3;
-  grid-row: 1/3;
-}
-
 .image_grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -847,11 +889,13 @@ nav {
 
 @media (min-width: 568px) {
   .up {
+    display: grid;
     grid-template-rows: auto;
     grid-template-areas:
       "one top"
       "one bottom";
     margin-top: 0.6em;
+    grid-column-gap: 20px;
   }
 
   .up-pic {
@@ -876,21 +920,21 @@ nav {
 @media (min-width: 768px) {
   .c-section-1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(8,1fr);
     grid-column-gap: 20px;
     margin-top: 6.0em;
   }
 
   .c-section-1 h3 {
-    grid-column: 1/2;
+    grid-column: 2/8;
   }
 
   .first, .section_2, .summary_list {
-    grid-column: 2/4;
+    grid-column: 2/8;
   }
 
   .first {
-    margin-top: .8em;
+    margin-top: 2.4em;
   }
 
   .summary_list {
@@ -921,9 +965,23 @@ nav {
     margin-top: 4.8em;
   }
 
-  .section_3 {
+  .section_3, .section_3-grid {
     margin-top: 2.4em;
   }
+
+  .section_3-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 20px;
+  }
+
+    .section_3-grid h5, .section_3-grid figcaption, .section_3-grid h5, .section_3-grid p {
+      grid-column: 1/3;
+    }
+
+    .section_3-grid img {
+      grid-column: 1/2;
+    }
 
   .first_pic {
     margin-top: 1.2em;
@@ -965,23 +1023,19 @@ nav {
   .summary_list {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(min-content, max-content);
-    margin-top: 1.8em;
   }
 
   .what {
     grid-column: 1/2;
     height: 9em;
-    margin-top: 0px;
   }
 
   .tools {
     grid-column: 3/4;
     height: 9em;
-    margin-top: 0px;
   }
 
   .duration {
-    margin-top: 0.6em;
     grid-column: 3/4;
     grid-row-start: 2;
   }
@@ -989,31 +1043,6 @@ nav {
   .deliverables {
     grid-column: 2/3;
     grid-row: 1/3;
-    margin-top: 0px;
-  }
-
-  .project_1_CORE {
-    margin-top: 3.6em;
-  }
-
-  .section_2 {
-    margin-top: 4.8em;
-  }
-
-  .section_3 {
-    margin-top: 2.4em;
-  }
-
-  .first_pic {
-    margin-top: 1.2em;
-  }
-
-  .section_4 {
-    margin-top: 1.2em;
-  }
-
-  .section_4 h6 {
-    margin-top: 0px;
   }
 }
 
@@ -1169,3 +1198,16 @@ nav {
   background-image: url(../assets/icons/sn-Github.png);
   margin-right: 0px;
 }
+
+@media (min-width: 1550px) {
+
+  main, nav, .footer-content, .copyright {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
