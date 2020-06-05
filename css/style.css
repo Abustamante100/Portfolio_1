@@ -50,17 +50,6 @@ img {
     margin: 6.0em 13em 9.6em 13em;
     height: auto;
   }
-
-  main, .nav, .footer-Content {
-    max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-content {
-    padding-left: auto;
-    padding-right: auto;
-  }
 }
 
 /*=============================== Typography ===============================*/
@@ -1199,9 +1188,9 @@ nav {
 }
 
 /* <==================== Big Screens ================> */
-@media (min-width: 1550px) {
+@media (min-width: 1500px) {
   main, nav, .footer-content, .copyright {
-    max-width: 1250px;
+    max-width: 1150px;
     margin-left: auto;
     margin-right: auto;
   }
