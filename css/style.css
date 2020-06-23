@@ -5,6 +5,7 @@
 :root {
   font-size: 62.5%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 body {
