@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 
 
 // Mobile nav
-if (screen.width <= 568) {
+if (screen.width < 568) {
 
   const navSlide = () => {
 
