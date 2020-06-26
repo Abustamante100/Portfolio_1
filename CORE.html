@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/reset.css">
   <link rel="stylesheet" href="https://use.typekit.net/hej3ysz.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="cssbox.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -18,7 +19,7 @@
   <header id="header">
     <nav id="nav">
       <a href="index.html" class="logo">
-        <img src="assets/images/homepage/logo.png" alt="logo">
+        <img src="assets/images/homepage/logo.png" alt="logo" class="no">
       </a>
       <ul class="navbar">
         <li class="first-nav-li"><a href="index.html">Home</a></li>
@@ -51,6 +52,7 @@
     <article>
       <h2>CORE Case Study</h2>
       <section class="project_1_CORE">
+
         <img src="assets/images/CORE/CORE_mockup.png" alt="Picture of CORE's dashboard on a desktop and mobile screen">
       </section>
       <figcaption>A mockup of CORE's dashboard.</figcaption>
@@ -144,26 +146,26 @@
           <h4>User Survey</h4>
           <p class="first_par">Using Google surveys I was able to collect data on a number of respondents.</p>
 
-            <section class="stats">
-              <div class="percentage">
-                <span class="stats-h">68.8%</span>
-                <p class="stats-p">Mainly used their cloud service on desktop </p>
-              </div>
-              <div class="percentage">
-                <span class="stats-h">58.8%</span>
-                <p class="stats-p">Want a cloud service dedicated to a niche</p>
-              </div>
-              <div class="percentage">
-                <span class="stats-h">93.8%</span>
-                <p class="stats-p">Use the cloud for school</p>
-              </div>
-              <div class="percentage">
-                <span class="stats-h">62.5%</span>
-                <p class="stats-p">Use the cloud for work</p>
-              </div>
-            </section>
+          <section class="stats">
+            <div class="percentage">
+              <span class="stats-h">68.8%</span>
+              <p class="stats-p">Mainly used their cloud service on desktop </p>
+            </div>
+            <div class="percentage">
+              <span class="stats-h">58.8%</span>
+              <p class="stats-p">Want a cloud service dedicated to a niche</p>
+            </div>
+            <div class="percentage">
+              <span class="stats-h">93.8%</span>
+              <p class="stats-p">Use the cloud for school</p>
+            </div>
+            <div class="percentage">
+              <span class="stats-h">62.5%</span>
+              <p class="stats-p">Use the cloud for work</p>
+            </div>
+          </section>
 
-            <p class="inside-p">I also found out that the top 3 most used and valued features by users were creating content, uploading a file and sharing a file.</p>
+          <p class="inside-p">I also found out that the top 3 most used and valued features by users were creating content, uploading a file and sharing a file.</p>
         </section>
 
         <section class="section_2">
@@ -184,9 +186,9 @@
           <section class="section_3">
 
             <div class="up">
-            <div class = "up-pic">
-              <img src="assets/images/CORE/emma.png" alt="A picture of a woman with glasses">
-            </div>
+              <div class="up-pic">
+                <img src="assets/images/CORE/emma.png" alt="A picture of a woman with glasses">
+              </div>
               <h5 class="user-name">Emma Collins</h5>
               <ul class="demo">
                 <li class="up_mini_list_item"><span class="bold">Age:</span> 20</li>
@@ -223,9 +225,9 @@
 
           <section class="section_3">
             <div class="up">
-            <div class="up-pic">
-              <img src="assets/images/CORE/xavier.png" alt="A picture of a man">
-            </div>
+              <div class="up-pic">
+                <img src="assets/images/CORE/xavier.png" alt="A picture of a man">
+              </div>
               <h5 class="user-name">Xavier Dillard</h5>
               <ul class="demo">
                 <li class="up_mini_list_item"><span class="bold">Age:</span> 32</li>
@@ -260,7 +262,7 @@
 
           <p class="inside-p">A lot of the information provided in the user personas were based on data collected on the survey. The demographic questions informed the occupations, age, gender, relationship status of Emma and Xavier. </p>
 
-            <p>However, one thing
+          <p>However, one thing
             to note is
             that Xavier was originally a production manager. It wasn’t till I got deeper into the project that I had to come back and change Xavier to an assistant director. I didn’t realize that assistant directors, not producers had more of the
             day-to-day administrative tasks that I was thinking about. </p>
@@ -291,7 +293,8 @@
             <li>Upload a file</li>
           </ul>
 
-          <p class="short-p">Something to note is that I originally had locking a file and color coding a file as part of the MVPs instead of creating/logging into an account. It wasn’t till I got to wireframing where I realized that those were task users needed! I
+          <p class="short-p">Something to note is that I originally had locking a file and color coding a file as part of the MVPs instead of creating/logging into an account. It wasn’t till I got to wireframing where I realized that those were task
+            users needed! I
             think that I was so focused on the data and the users' wants/frustrations that I didn’t consider the obvious. So I had to go back to add these two tasks in the user stories and user flows. </p>
         </section>
 
@@ -646,7 +649,7 @@
       <h2>Contact</h2>
       <section class="contact_info">
         <h4>Hit Me Up</h4>
-        <a href="mailto: ArnoldBustamante@gmail.com" class="email">ArnoldBustamante@gmail.com</a>
+        <a href="mailto:ArnoldBustamante@gmail.com" class="email">ArnoldBustamante@gmail.com</a>
         <a href="tel:+1-718-730-0827" class="number">(718) 730-0827</a>
         <a href="https://www.linkedin.com/in/arnold-bustamante/" class="linkedin" target="_blank"></a>
         <a href="https://www.instagram.com/arnoldbustamove/" class="instagram" target="_blank"></a>
@@ -663,7 +666,7 @@
           <input type="email" name="email" id="email" class="input" placeholder="Type in email..." required>
           <label for="message">Message</label>
           <textarea name="message" rows="6" cols="30" id="message" class="input" placeholder="Type in message..." required></textarea>
-          <button type="submit" name="submit" id="footerBtn" class="footerBtn" disabled="true">Send</button>
+          <button type="submit" name="submit" id="footerBtn" class="footerBtn" disabled>Send</button>
         </form>
       </section>
     </div>
@@ -674,6 +677,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="scripts/nav.js"></script>
   <script src="scripts/input.js"></script>
+  <script src="scripts/lightbox.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168672683-1"></script>
