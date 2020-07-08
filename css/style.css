@@ -30,7 +30,9 @@ main {
 
 img {
   width: 100%;
-  cursor: pointer;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 @media (min-width: 568px) {
@@ -263,7 +265,7 @@ button {
 button:hover {
   background-color: #D7D7D7;
   border-color: #D7D7D7;
-  color: #0D0D0D;
+  color: #353535;
 }
 
 .projects button:hover {
@@ -315,7 +317,7 @@ button:active, button:focus, .projects button:active, .projects button:focus {
 
 .footerBtn:hover {
   background-color: #FCFCFC;
-  color: #0D0D0D;
+  color: #353535;
 }
 
 /* ============= Input fields ============= */
@@ -617,9 +619,17 @@ nav {
   margin-top: 1.6em;
 }
 
+.project_1_CORE img {
+  cursor: auto;
+}
+
 .p-container2 {
   margin-right: 2.4em;
   margin-bottom: 2.3em;
+}
+
+.p-container img {
+  cursor: auto;
 }
 
 @media (min-width: 568px) {
@@ -789,6 +799,7 @@ nav {
   .main_pic {
     grid-column: 1/9;
     grid-row: 2/3;
+    cursor: auto;
   }
 
   .about-quote {
@@ -923,6 +934,10 @@ nav {
   margin-top: 0.8em;
 }
 
+.second_pic {
+  margin-top: 0.4em;
+}
+
 .cp_heading {
   margin-top: 0.571em;
 }
@@ -971,6 +986,10 @@ nav {
 
 .section_4 h6 {
   margin-top: 0px;
+}
+
+.up-pic img {
+  cursor: auto;
 }
 
 @media (min-width: 568px) {
@@ -1139,6 +1158,10 @@ nav {
   opacity: 0;
 }
 
+.no {
+  cursor: pointer;
+}
+
 @media (min-width: 378px) {
   .logo {
     width: 162px;
@@ -1149,6 +1172,7 @@ nav {
   display: block;
   margin: 1.6em auto 2.4em auto;
   width: 46.9387%;
+  cursor: auto;
 }
 
 @media (min-width: 768px) {
@@ -1168,6 +1192,7 @@ nav {
 
 .section_pic {
   margin-top: 8.8em;
+  cursor: auto;
 }
 
 @media (min-width: 1152px) {
@@ -1288,6 +1313,7 @@ nav {
   object-fit: contain;
   border: 2px solid #FCFCFC;
   background-color: #0D0D0D;
+  cursor: auto;
 }
 
 /* <==================== Big Screens ================> */
