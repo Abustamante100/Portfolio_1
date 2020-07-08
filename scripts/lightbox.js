@@ -2,7 +2,7 @@ const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 
-const images = document.querySelectorAll('img:not(.no)')
+const images = document.querySelectorAll('.first_pic, .inside_pic, .image_grid img, .second_pic, .about-photos img')
 images.forEach(image => {
   image.addEventListener('click', e => {
     lightbox.classList.add('active')
