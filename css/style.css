@@ -1029,7 +1029,7 @@ nav {
   cursor: auto;
 }
 
-.move-ca, .up-pic {
+.move-ca, .up-pic, .comp-pic {
   margin-top: 2.4em;
 }
 
@@ -1042,7 +1042,7 @@ nav {
     grid-row-gap: 2.4em;
   }
 
-.up-pic {
+  .up-pic, .comp-pic {
     margin-top: 0px;
   }
 }
