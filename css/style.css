@@ -268,11 +268,11 @@ button:hover {
   color: #353535;
 }
 
-.projects button:hover {
+/* .projects button:hover {
   background-color: #FCFCFC;
-}
+} */
 
-button:active, button:focus, .projects button:active, .projects button:focus {
+button:active, button:focus {
   background-color: #353535;
   border-color: #353535;
   color: #FCFCFC;
