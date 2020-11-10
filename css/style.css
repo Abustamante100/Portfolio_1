@@ -24,7 +24,7 @@ body {
 }
 
 main {
-  margin: 4.0em 16px 9.6em 16px;
+  margin: 4.0em 16px 10.8em 16px;
   height: auto;
 }
 
@@ -51,7 +51,7 @@ img {
 
 /*=============================== Typography ===============================*/
 h1, h2, h3, h4, h5, p, a, button, li, .label, input, textarea, label, figcaption, .stats-h, .CORE-quote {
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 h1, h3, h4, h5, h6, .label_d, .label_t, label, .quote, .bold {
@@ -766,11 +766,11 @@ nav {
 }
 
 .section_1, .section_2 {
-  margin-top: 4.0em;
+  margin-top: 5.6em;
 }
 
 .first {
-  margin-top: 3.2em;
+  margin-top: 1.6em;
 }
 
 .section_3, .section_3-grid {
@@ -778,7 +778,7 @@ nav {
 }
 
 .section_4 {
-  margin-top: 0.8em;
+  margin-top: 1.2em;
 }
 
 .first_par, .first_par2 {
@@ -1211,7 +1211,7 @@ nav {
 
 @media (min-width: 1152px) {
   .section_pic {
-    margin-top: 8.8em;
+    margin-top: 11.2em;
   }
 }
 
